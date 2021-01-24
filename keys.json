@@ -1,8 +1,8 @@
 {
-    "gmail":"balls",
-    "password": "balls",
-    "statement_filepath": "balls",
-    "budget_filepath": "balls",
-    "client_id": "balls",
-    "client_secret":"balls"
+    "gmail":"matt.anderson.inf@gmail.com",
+    "password": "Hummingbird95.",
+    "statement_filepath": "statements/Jan-01-2021_Jan-17-2021_BankStatement.csv",
+    "budget_filepath": "budgets/jan-tets-budget.xlsx",
+    "client_id": "238466450063-8hnapg7hteur0nbkmepmtsfs35sjsuar.apps.googleusercontent.com",
+    "client_secret":"V3NCUV-9us-tAVUEGCBpkBgI"
 }
