@@ -4,13 +4,16 @@ import os.path
 import json
 import pandas as pd
 import datetime
+import xlsxwriter
 start_date = '2021-01-01'
 end_date = '2021-01-17'
 
+"""
 from __future__ import print_function
 import pickle
 import os.path
 from Google import Create_Service
+"""
 
 CLIENT_SECRET_FILE = ""
 API_NAME = "drive"
@@ -28,7 +31,7 @@ def main():
     statementDF = pd.read_csv(allKeys['statement_filepath'])
 
     # convert Date to datetime format for easier date filtering
-    statementDF["Date"] = pd.to_datetime(statementDF.Date)
+    statementDF["Date"] = pd.to_datetime(statementDF['Date'])
 
     # filter out the days from the statement
     datedStatementDF = statementDF.loc[(statementDF['Date'] > start_date) & (statementDF['Date'] <= end_date)]
@@ -39,9 +42,11 @@ def main():
     # filter out all transactions that aren't paycheck
     expensesDF = datedStatementDF.loc[(datedStatementDF['Category'] != 'Paycheck') & (datedStatementDF['Category'] != 'Income')]
 
+    # get list of unique categories
     categoryList =  expensesDF['Category'].unique()
 
-    
+    # open up the excel workbook
+     
 
 
 
