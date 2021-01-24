@@ -45,7 +45,7 @@ def main():
     # get list of unique categories
     categoryList =  expensesDF['Category'].unique()
 
-    # open up the excel workbook
+    # make excel workbook 
     workbook = xlsxwriter.Workbook(allKeys['budget_filepath'])
     
      
