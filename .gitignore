@@ -1,4 +1,4 @@
 # git ignore file. DO NOT PUT KEYS INTO REPOSITORY
 
-/keys.json
+
 *.csv
