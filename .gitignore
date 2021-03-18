@@ -1,0 +1,5 @@
+# git ignore file. DO NOT PUT KEYS INTO REPOSITORY
+
+config.json
+/resources/client_secret.json
+/resources/spreadsheet.py

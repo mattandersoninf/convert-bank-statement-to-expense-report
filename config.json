@@ -1,0 +1,30 @@
+{
+  "installed": {
+    "client_id": "",
+    "project_id": "",
+    "client_secret": "",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "redirect_uris": [
+      "urn:ietf:wg:oauth:2.0:oob",
+      "http://localhost"
+    ]
+  },
+  "runtime": {
+    "gmail": "",
+    "password": "",
+    "statement_filepath": "",
+    "budget_filepath": "",
+    "local_excel_workbook": "",
+    "expense_report": "",
+    "bank_statement_pdf": "",
+    "CLIENT_SECRET_FILE": "",
+    "API_NAME": "drive",
+    "API_VERSION": "v3",
+    "SCOPES": ["https://www.googleapis.com/auth/drive"],
+    "expense_col_names": ["Date", "Amount", "Description", "Category"],
+    "start_date": "2021-01-01",
+    "end_date": "2021-01-17"
+  }
+}
