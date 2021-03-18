@@ -11,7 +11,7 @@ At this time, this project leverages the Google Sheets Monthly Budget template.
 
 # Information
 
-keys.json format
+client_secret.json format
 - gmail: user gmail address
 - password: password to google account
 - stament_filepath: local bank statement csv filepath
@@ -21,8 +21,8 @@ keys.json format
 # To-Do List: 
 
 Read in data from statement / sheet / etc
-- [ ] Exception handle for file not found 
-- [ ] Modify data locally
+- [x] Exception handle for file not found 
+- [x] Modify data locally
 - [ ] Save copy locally
 - [ ] Exception handle for saving copy locally
 - [ ] (Complete the above steps then have the program overwrite the expense report if a report of the same name already exists in oyour directory)
@@ -54,5 +54,5 @@ Other Ideas:
 During installation, it is known that installing pdftotext can cause some issues. There are known solutions at the following links:
 [Stackoverflow](https://stackoverflow.com/a/58139729)
 [Coder.Haus's Personal Blog](https://coder.haus/2019/09/27/installing-pdftotext-through-pip-on-windows-10/)
-[Conda Install]()
+[Conda Install](https://anaconda.org/conda-
 
