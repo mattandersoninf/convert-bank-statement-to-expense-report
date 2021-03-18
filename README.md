@@ -54,5 +54,5 @@ Other Ideas:
 During installation, it is known that installing pdftotext can cause some issues. There are known solutions at the following links:
 [Stackoverflow](https://stackoverflow.com/a/58139729)
 [Coder.Haus's Personal Blog](https://coder.haus/2019/09/27/installing-pdftotext-through-pip-on-windows-10/)
-[Conda Install](https://anaconda.org/conda-
+[Conda Install]()
 
