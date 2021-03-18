@@ -24,6 +24,8 @@ from Google import Create_Service
 # MOVE THESE TO THE CONFIG.JSON FILE
 # transaction_expense_start_cell = (5, 2)
 # transaction_income_start_cell = (5, 7)
+
+## CHECK OUT LINE 117 function call commented out
 #####################################
 
 def get_google_account_keys_file_from_json(keys_json_file='config.json'):
@@ -80,7 +82,10 @@ def write_to_expense_report(workbook_path, summary_df, transactions_df):
 # verification 
 
 def main():
-    allKeys = get_google_account_keys_file_from_json()['runtime']
+    my_config_path = 'config.json'
+    if len(sys.argv) > 1:
+        my_config_path = sys.argv[1]
+    allKeys = get_google_account_keys_file_from_json(my_config_path)['runtime']
     statement_filepath = allKeys['statement_filepath']
 
     try:
@@ -109,7 +114,7 @@ def main():
 
     # write expense df to transactions worksheet
     # write_to_expense_report(allKeys["budget_filepath"],'Transactions',transaction_expense_start_cell[0],transaction_expense_start_cell[1],expensesDF)
-    write_to_expense_report(allKeys['expense_report'])
+    ## write_to_expense_report(allKeys['expense_report'])
 
     """
     # test functions to check on the dataframes (need better testing practices)
